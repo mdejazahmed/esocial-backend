@@ -43,6 +43,6 @@ app.use("/api/comments", commentRoute);
 app.use("/api/likes", likeRoute);
 app.use("/api/relationships",relationshipRoute)
 
-app.listen(8800, () => {
+app.listen(process.env.PORT || 8800, () => {
   console.log("server is running");
 });
